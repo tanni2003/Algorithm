@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author taehyunkim
+ *
+ */
+module AlgorithmMaster {
+}
