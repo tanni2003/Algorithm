@@ -2,7 +2,6 @@
 package com.tanni.stage6;
 import java.util.Scanner;
 
-
 public class NumberOfWords {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
