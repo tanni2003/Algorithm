@@ -18,7 +18,6 @@ public class OXQuiz {
 				if(ox[j].equals("O")) {
 					++score;
 					sum += score;
-					System.out.println(ox[j]);
 				}
 				else {
 					score = 0;
