@@ -1,0 +1,45 @@
+//#5622
+package com.tanni.stage7;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Dial {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String dial = sc.nextLine();
+		int time = 0;
+		Map<String,Integer> result = new HashMap<String, Integer>();
+		result.put("A", 2);
+		result.put("B", 2);
+		result.put("C", 2);
+		result.put("D", 3);
+		result.put("E", 3);
+		result.put("F", 3);
+		result.put("G", 4);
+		result.put("H", 4);
+		result.put("I", 4);
+		result.put("J", 5);
+		result.put("K", 5);
+		result.put("L", 5);
+		result.put("M", 6);
+		result.put("N", 6);
+		result.put("O", 6);
+		result.put("P", 7);
+		result.put("Q", 7);
+		result.put("R", 7);
+		result.put("S", 7);
+		result.put("T", 8);
+		result.put("U", 8);
+		result.put("V", 8);
+		result.put("W", 9);
+		result.put("X", 9);
+		result.put("Y", 9);
+		result.put("Z", 9);
+		
+		for(int i = 0; i<dial.length(); i++) {
+			time += result.get(dial.charAt(i));
+		}
+		System.out.println(time);
+	}
+}
