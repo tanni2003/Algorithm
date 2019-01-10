@@ -8,6 +8,7 @@ public class NumOfResidents {
 		int case_num = sc.nextInt();
 		int result[] = new int[case_num];
 		for(int i = 0; i<case_num; i++) {
+			//int result[] = new int[case_num];
 			int floor = sc.nextInt() + 1;
 			int	room = sc.nextInt();
 			int residents[][] = new int[floor][room];
