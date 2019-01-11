@@ -1,0 +1,29 @@
+//#2750
+package com.tanni.stage9;
+import java.util.Scanner;
+
+public class BubbleSort {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int input_num = sc.nextInt();
+		int[] num = new int[input_num];
+		
+		for(int i = 0; i<input_num; i++) {
+			num[i] = sc.nextInt();
+		}
+		
+	}
+	private static int[] bubble_sort(int[] arr) {
+		for(int i = 0; i<arr.length; i++) {
+			int temp = arr[i];
+			int aux = i+1;
+			int j = arr.length - i;
+			while(arr[aux]<temp && j>=0) {
+				arr[aux+1] = arr[aux];
+				aux--;
+			}
+			arr[aux] = temp;
+		}
+		return arr;
+	}
+}
