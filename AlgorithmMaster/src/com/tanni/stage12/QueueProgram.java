@@ -5,19 +5,21 @@ import java.util.Queue;
 import java.util.LinkedList;
 
 public class QueueProgram {
+	static int last = 0;
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
 		sc.nextLine();
-		int last = 0;
+		
 		
 		Queue<String> queue = new LinkedList<String>();
 		for(int i = 0; i<num; i++) {
 			String str = sc.nextLine();
-			last = queue(str, queue, last);
+			queue(str, queue);
 		}
 	}
-	public static int queue(String str, Queue queue, int last) {
+	public static int queue(String str, Queue queue) {
 		String[] input = str.split(" ");
 		
 		switch(input[0]) {
