@@ -1,0 +1,47 @@
+//#1158
+package com.tanni.stage12;
+import java.util.Scanner;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.NoSuchElementException;
+import java.util.Arrays;
+
+public class Josephus {
+	static int[]  visited;
+	static int num;
+	static int start;
+	static Scanner sc;
+	static Deque<Integer> deque = new ArrayDeque<Integer>();
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		num = sc.nextInt();
+		start = sc.nextInt();
+		visited = new int[num];
+		String result = "<";
+		
+		josephus(start);
+		for(int i = 0; i<num; i++){
+			result += visited[i];
+			result += ", ";
+		}
+		System.out.println(result.substring(0, result.length()-2)+">");
+	}
+	public static void josephus(int start){
+		for(int i = start-1; i>=1; i--) {
+			deque.push(i);
+		}
+		for(int i = num; i>=start; i--) {
+			deque.push(i);
+		}
+		
+		for(int i = 0; i<num; i++) {
+			visited[i] = (int) deque.removeFirst();
+			System.out.println(visited[i]);
+			for(int j = 1; j<start; j++) {
+				if(!deque.isEmpty()) {
+					deque.addLast(deque.removeFirst());
+				}
+			}
+		}
+	}
+}

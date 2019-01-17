@@ -1,0 +1,15 @@
+package com.tanni.stage12;
+
+import java.util.*;
+
+public class test {
+	public static void main(String[] args) {
+		Deque<String> deque = new ArrayDeque<String>();
+		String[] str = new String[2];
+		str[0] = "1";
+		str[1] = "2";
+		deque.addFirst(str[0]);
+		deque.addLast(str[1]);
+		System.out.println(deque.peekFirst());
+	}
+}
