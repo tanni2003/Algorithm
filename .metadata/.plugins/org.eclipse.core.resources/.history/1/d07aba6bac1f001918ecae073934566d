@@ -1,0 +1,18 @@
+//#11004
+package com.tanni.stage20;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class KthNumber {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int iter = sc.nextInt();
+		int k = sc.nextInt();
+		int[] arr = new int[iter];
+		for(int i = 0; i<iter; i++) {
+			arr[i] = sc.nextInt();
+		}
+		Arrays.sort(arr);
+		System.out.println(arr[k-1]);
+	}
+}

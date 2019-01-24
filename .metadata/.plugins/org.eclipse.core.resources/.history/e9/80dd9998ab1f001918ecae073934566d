@@ -1,0 +1,25 @@
+//#11004
+package com.tanni.stage20;
+import java.util.Scanner;
+
+public class KthNumber {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int iter = sc.nextInt();
+		int k = sc.nextInt();
+		int[] arr = new int[iter];
+		for(int i = 0; i<iter; i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int index = 1 ; index < arr.length ; index++){
+		      int temp = arr[index];
+		      int aux = index - 1;
+		      while( (aux >= 0) && ( arr[aux] > temp ) ) {
+		         arr[aux+1] = arr[aux];
+		         aux--;
+		      }
+		      arr[aux + 1] = temp;
+		   }
+		System.out.println(arr[k-1]);
+	}
+}
