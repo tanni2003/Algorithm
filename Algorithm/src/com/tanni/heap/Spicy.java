@@ -18,7 +18,6 @@ public class Spicy {
         int time = 0;
         while(queue.size()>1) {
         	temp1 = queue.poll();
-        	System.out.println(temp1);
         	if(temp1>=K) {
         		answer = time;
         		break;
@@ -31,7 +30,6 @@ public class Spicy {
         if(queue.peek() >= K) {
         	answer = time;
         }
-        
         return answer;
     }
 }
