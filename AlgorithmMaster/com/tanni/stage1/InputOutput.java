@@ -1,5 +1,5 @@
 //#11718
-package com.tanni.stage1;
+package src.com.tanni.stage1;
 import java.util.Scanner;
 
 public class InputOutput {
