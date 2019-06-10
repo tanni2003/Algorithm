@@ -26,10 +26,8 @@ public class Coin {
 				break;
 			}
 			else if(coin[temp]<=money) {
-				money -= coin[temp];
-				answer++;
-
-				continue;
+				answer += money/coin[temp];
+				money = money%coin[temp];
 			}
 			temp--;
 		}
