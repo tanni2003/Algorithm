@@ -27,10 +27,3 @@ public class Rope {
 		return answer;
 	}
 }
-
-//[1, 5, 10, 15, 20]
-//5
-//20
-//30
-//30
-//20
