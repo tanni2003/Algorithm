@@ -4,7 +4,7 @@
 * Algorithm
   * 알고리즘 별 문제 풀이
 * AlgotithmMaster
-  * 단계별로 풀어보기의 문제를 풀이
+  * 백준 단계별로 풀어보기의 문제를 풀이
 * Programmers
   *  프로그래머스 문제 풀이
 * https://www.acmicpc.net/step
